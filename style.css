@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.gradient-bg {
+    background-color: #dcbff3; 
+}
+.cta-button {
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -10px rgba(72, 3, 233, 0.5);
+}
+
+/* Estilos para a animação de fade-in na rolagem */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Garante que o conteúdo não fique embaixo do menu fixo */
+main {
+    padding-top: 72px; /* Altura do menu (h-18 = 4.5rem = 72px) */
+}

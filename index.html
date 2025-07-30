@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocuidado Feminino</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Menu Responsivo Fixo -->
+    <nav id="navbar" class="bg-white/90 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-[72px]">
+                <a href="#" class="text-xl font-bold text-purple-800">Autocuidado Feminino</a>
+                
+                <!-- Links do Menu (Desktop) -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#problema" class="text-gray-600 hover:text-purple-600 transition">O Problema</a>
+                    <a href="#solucao" class="text-gray-600 hover:text-purple-600 transition">A Solução</a>
+                    <a href="#autora" class="text-gray-600 hover:text-purple-600 transition">Autora</a>
+                    <a href="#oferta" class="text-gray-600 hover:text-purple-600 transition font-bold">Oferta</a>
+                </div>
+                
+                <!-- Botão Hamburger (Mobile) -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#problema" class="block py-2 px-6 text-sm text-gray-700 hover:bg-purple-50">O Problema</a>
+            <a href="#solucao" class="block py-2 px-6 text-sm text-gray-700 hover:bg-purple-50">A Solução</a>
+            <a href="#autora" class="block py-2 px-6 text-sm text-gray-700 hover:bg-purple-50">Autora</a>
+            <a href="#oferta" class="block py-2 px-6 text-sm text-gray-700 hover:bg-purple-50 font-bold">Oferta</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seção Principal (Hero) -->
+        <header class="gradient-bg min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center py-12">
+                <h1 class="text-4xl md:text-6xl font-bold text-purple-800 mb-4 leading-tight fade-in-element">Um Guia de Autocuidado para a Mulher que Quer se Reencontrar.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 fade-in-element" style="transition-delay: 150ms;">Um guia prático de autocuidado para a mulher moderna que deseja mais equilíbrio, energia e bem-estar em sua rotina diária.</p>
+                <div class="fade-in-element" style="transition-delay: 300ms;">
+                    <a href="#oferta" class="cta-button bg-purple-600 text-white font-bold py-4 px-10 rounded-full text-lg inline-block shadow-lg">QUERO TRANSFORMAR MINHA ROTINA!</a>
+                    <p class="text-sm text-gray-500 font-bold mt-4">Compra segura e acesso imediato.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção do Problema -->
+        <section id="problema" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-purple-900 mb-2 fade-in-element">Você se sente assim às vezes?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto fade-in-element" style="transition-delay: 150ms;">Se você se identifica com algum destes pontos, este ebook foi feito para você.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 fade-in-element" style="transition-delay: 300ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-100 mx-auto mb-4">
+                            <i data-lucide="clock-3" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Sem tempo para nada</h3>
+                        <p class="text-gray-600">Sua agenda é tão cheia que cuidar de si mesma parece um luxo impossível.</p>
+                    </div>
+                    <div class="p-6 fade-in-element" style="transition-delay: 450ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-100 mx-auto mb-4">
+                            <i data-lucide="battery-low" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Cansada e sem energia</h3>
+                        <p class="text-gray-600">Você acorda já se sentindo esgotada e luta para manter o foco durante o dia.</p>
+                    </div>
+                    <div class="p-6 fade-in-element" style="transition-delay: 600ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-100 mx-auto mb-4">
+                            <i data-lucide="heart-crack" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Sente culpa ao descansar</h3>
+                        <p class="text-gray-600">Acredita que tirar um tempo para si é egoísmo e se sente improdutiva ao relaxar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção da Solução (Benefícios) -->
+        <section id="solucao" class="py-24 bg-purple-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 fade-in-element">
+                        <img src="https://placehold.co/500x600/e9d5ff/333333?text=Capa+do+Ebook" alt="Capa do Ebook de Autocuidado" class="rounded-lg shadow-2xl mx-auto">
+                    </div>
+                    <div class="md:w-1/2 fade-in-element" style="transition-delay: 150ms;">
+                        <span class="text-purple-600 font-semibold">A SOLUÇÃO QUE VOCÊ PRECISA</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mt-2 mb-6">Autocuidado Feminino</h2>
+                        <p class="text-gray-600 mb-6">Desperte a Sua Essência: Autocuidado Feminino do Corpo.</p>
+                        <p class="text-gray-600 mb-6">Este ebook não é apenas um livro, é um convite para uma jornada de transformação. Com ele, você vai aprender a integrar o autocuidado na sua vida de forma simples, realista e sem culpa.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i><span class="text-gray-700"><strong>Criar rituais poderosos:</strong> reconexão com sua essência.</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i><span class="text-gray-700"><strong>Aumentar sua energia e disposição:</strong> rotina prática de autocuidado emocional e físico.</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i><span class="text-gray-700"><strong>Fortalecer sua autoestima e confiança:</strong> aumento da autoestima e amor-próprio.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção Sobre a Autora -->
+        <section id="autora" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 text-center fade-in-element">
+                        <img src="https://placehold.co/300x300/f3e8ff/333333?text=Foto+da+Autora" alt="Foto da Autora" class="rounded-full shadow-lg mx-auto w-48 h-48 md:w-64 md:h-64 object-cover">
+                    </div>
+                    <div class="md:w-2/3 fade-in-element" style="transition-delay: 150ms;">
+                        <h2 class="text-3xl font-bold text-purple-900 mb-4">Olá, eu sou Núbia Menezes Souza</h2>
+                        <p class="text-gray-600 mb-4" style="font-size: 16.5px;">Sou casada, mãe de um filho que é uma das maiores bênçãos da minha vida. Mas antes de chegar até aqui, vivi momentos que pareciam não ter saída. Já me vi no fundo do poço, enfrentando dores tão profundas que, por um instante, pensei em desistir de tudo — até mesmo da vida."</p>
+                        <p class="text-gray-600 mb-3" style="font-size: 16.5px;">As frustrações, os medos e as marcas que a vida deixou me fizeram duvidar da minha força. Mas foi justamente nesses momentos de escuridão que comecei a reencontrar a luz que sempre esteve dentro de mim. A dor me transformou. A queda me ensinou. E a superação se tornou minha bandeira.</p>
+                        <p class="text-gray-600 mb-3" style="font-size: 16.5px;">Hoje, olho para trás com gratidão. Cada cicatriz conta uma história de resistência. Cada obstáculo vencido me tornou mais forte, mais consciente do meu valor e mais determinada a inspirar outras mulheres a também se reerguerem.</p>
+                        <p class="text-gray-600 mb-3" style="font-size: 16.5px;">Não sou perfeita. Sou real. E é nessa verdade que encontrei meu propósito: viver com coragem, compartilhar com amor e seguir em frente com fé.</p>
+                        <p class="text-gray-600" style="font-size: 16.5px;">Se você está passando por um momento difícil, saiba que é possível recomeçar. Eu sou prova viva de que a dor não precisa ser o fim — ela pode ser o início de uma nova versão de você mesma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Oferta -->
+        <section id="oferta" class="py-24 gradient-bg">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center border-t-8 border-purple-600 fade-in-element">
+                    <h2 class="text-3xl font-bold text-purple-900 mb-4">Adquira seu Guia de Autocuidado Feminino Agora!</h2>
+                    <p class="text-gray-600 mb-6">Receba acesso imediato ao ebook completo e comece sua transformação hoje mesmo.</p>
+                    <div class="my-8">
+                        <span class="text-2xl text-gray-500 line-through">De R$97,00</span>
+                        <p class="text-5xl md:text-6xl font-bold text-purple-800 my-2">por apenas R$49,90</p>
+                        <p class="text-gray-600">ou 5x de R$9,98</p>
+                    </div>
+                    <a href="#" class="cta-button w-full bg-green-500 text-white font-bold py-4 px-10 rounded-full text-xl inline-block shadow-lg mb-4">SIM, EU QUERO ME CUIDAR!</a>
+                    <div class="flex items-center justify-center text-sm text-gray-500 mb-8"><i data-lucide="shield-check" class="h-5 w-5 mr-2"></i><span>Compra 100% segura</span></div>
+                    <div class="text-left bg-purple-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-purple-900">O que você vai receber:</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> <strong>Ebook Completo "Nome do Ebook" (PDF)</strong></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> <strong>Reconexão com sua essência</strong></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> <strong>Rotina prática de autocuidado emocional e físico</strong></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> <strong>Aumento da autoestima e amor-próprio</strong></li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 flex items-center justify-center fade-in-element">
+                        <img src="img/selo_garantia.png" alt="Selo de Garantia" class="w-24 h-24 mr-4">
+                        <div>
+                            <h4 class="font-bold text-purple-900 text-left">Garantia Vitalícia!</h4>
+                            <p class="text-gray-600 text-md text-left">O e-book vai atualizar conforme novas experiências e descobertas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Perguntas Frequentes (FAQ) - CORRIGIDA -->
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center text-purple-900 mb-12 fade-in-element">Perguntas Frequentes</h2>
+                <div class="space-y-4" x-data="{ open: 0 }">
+                    <!-- Pergunta 1 -->
+                    <div class="border rounded-lg fade-in-element">
+                        <button @click="open = (open === 1 ? 0 : 1)" class="w-full flex justify-between items-center text-left font-semibold text-lg p-4">
+                            <span>Como vou receber o ebook?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open === 1}"></i>
+                        </button>
+                        <div x-show="open === 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 max-h-0" x-transition:enter-end="opacity-100 max-h-screen" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 max-h-screen" x-transition:leave-end="opacity-0 max-h-0" class="overflow-hidden">
+                            <p class="p-4 pt-0 text-gray-600">O acesso é imediato após a confirmação do pagamento. Você receberá um e-mail com o link para baixar o ebook em formato PDF e os materiais bônus.</p>
+                        </div>
+                    </div>
+                    <!-- Pergunta 2 -->
+                    <div class="border rounded-lg fade-in-element">
+                        <button @click="open = (open === 2 ? 0 : 2)" class="w-full flex justify-between items-center text-left font-semibold text-lg p-4">
+                            <span>Posso ler no celular?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open === 2}"></i>
+                        </button>
+                        <div x-show="open === 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 max-h-0" x-transition:enter-end="opacity-100 max-h-screen" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 max-h-screen" x-transition:leave-end="opacity-0 max-h-0" class="overflow-hidden">
+                            <p class="p-4 pt-0 text-gray-600">Sim! O ebook está em formato PDF, compatível com qualquer celular, tablet, computador ou leitor de e-books.</p>
+                        </div>
+                    </div>
+                    <!-- Pergunta 3 -->
+                    <div class="border rounded-lg fade-in-element">
+                        <button @click="open = (open === 3 ? 0 : 3)" class="w-full flex justify-between items-center text-left font-semibold text-lg p-4">
+                            <span>E se eu não tiver tempo para aplicar?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open === 3}"></i>
+                        </button>
+                        <div x-show="open === 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 max-h-0" x-transition:enter-end="opacity-100 max-h-screen" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 max-h-screen" x-transition:leave-end="opacity-0 max-h-0" class="overflow-hidden">
+                            <p class="p-4 pt-0 text-gray-600">O método foi pensado exatamente para quem tem pouco tempo. Você aprenderá a usar blocos de 10 a 15 minutos do seu dia para um autocuidado eficaz e transformador.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-purple-900 text-white py-8">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2025 [Nome da Autora]. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Alpine.js para interatividade do FAQ e Menu -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    
+    <script>
+        // Renderiza os ícones da Lucide
+        lucide.createIcons();
+
+        // Lógica para o menu hamburger
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fecha o menu ao clicar em um link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Lógica para animação na rolagem
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1 // A animação começa quando 10% do elemento está visível
+        });
+
+        const elements = document.querySelectorAll('.fade-in-element');
+        elements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
